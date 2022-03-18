@@ -1,0 +1,440 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", Arial, sans-serif !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black !important;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+/* width scrollbar*/
+
+::-webkit-scrollbar {
+  width: 14px;
+}
+/* Track scrollbar*/
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(255, 255, 255);
+  border-radius: 10px;
+  background: #f4d6a2;
+}
+/* Handle scrollbar*/
+
+::-webkit-scrollbar-thumb {
+  background: #a2714b;
+  border-radius: 10px;
+}
+/* Handle on hover scrollbar*/
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a2714b;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.452) !important;
+  position: fixed !important;
+  z-index: 9;
+  width: 100% !important;
+}
+
+.navbar-nav {
+  width: 50% !important;
+  justify-content: space-between;
+}
+
+.nav-item {
+  color: white !important;
+}
+
+.text1234::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.text1234:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.text1234::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: #a2714b;
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+.text1234 {
+  position: relative;
+  font-size: 1rem;
+}
+
+@media (orientation: landscape) {
+  body {
+    grid-auto-flow: column;
+  }
+}
+
+.navbar-brand {
+  width: 30%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.collapse {
+  width: 500px !important;
+  justify-content: center;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header a {
+  text-decoration: none !important;
+}
+
+.logo {
+  width: 30%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.logo p {
+  color: #cca768;
+  text-decoration: none;
+  margin-bottom: 0 !important;
+}
+
+.logo123 {
+  width: 96px;
+  height: 76px;
+}
+
+.text123 {
+  color: #cca768 !important;
+  margin-bottom: 0 !important;
+  font-family: "Dancing Script", cursive !important;
+}
+
+.mymenu {
+  width: 46%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-toggler-icon {
+  background-color: #a2714b !important;
+}
+
+.mymenu ul {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  list-style: none;
+  width: 70%;
+  height: 100%;
+  align-items: center;
+  margin-bottom: 0 !important;
+}
+
+.mymenu ul a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.mymenu ul a :hover {
+  text-decoration: none;
+  color: #a2714b;
+}
+
+.sc1 {
+  width: 100%;
+  height: 850px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dv1{
+  z-index: 9;
+  width: 100%;
+  height: 300px;
+}
+.video-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 8;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  object-fit: cover;
+}
+
+.text1 {
+  color: white;
+  font-size: 70px;
+  text-align: center;
+}
+
+.text2 {
+  color: #cca768;
+
+}
+
+.sc2 {
+  width: 100%;
+  height: 18px;
+  border-top: 6px solid #cca768;
+  border-bottom: 6px solid #cca768;
+  background-color: black;
+}
+
+.sc3 {
+  width: 100%;
+  height: 500px;
+  display: flex;
+}
+
+.sc3_1 {
+  width: 35%;
+  height: 500px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sc3_1 p {
+  position: absolute;
+  z-index: 1;
+  font-size: 3em;
+  text-align: center;
+  font-family: "Dancing Script", cursive !important;
+  color: #80673c;
+}
+
+.sc3_2 {
+  width: 65%;
+  height: 500px;
+}
+
+.ph {
+  height: 500px !important;
+  object-fit: cover;
+}
+
+.square {
+  width: 250px;
+  height: 250px;
+  border: 1.5px solid black;
+  animation: square 9s linear infinite;
+  z-index: 2;
+}
+
+@keyframes square {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.sc4 {
+  width: 100%;
+  min-height: 450px;
+  background-color: #c49b63;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sc4_1 {
+  width: 70%;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.sc4_2 {
+  width: 20%;
+  height: 300px;
+  cursor: pointer;
+}
+
+.card2 {
+  min-width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: blak;
+}
+
+.order {
+  width: 120px;
+  height: 120px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 230px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid;
+}
+
+.flip-card-front {
+  background-color: #c49b63;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flip-card-back {
+  background-color: #c49b63;
+  color: rgb(0, 0, 0);
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.myname {
+  width: 100%;
+  height: 70px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  min-height: 730px;
+  background: url(../Prezentacia/img/footer.jpg) rgba(0, 0, 0, 0.836);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ft1 {
+  width: 70%;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+.box1 {
+  width: 30%;
+  height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.p1 {
+  font-size: 1.7em;
+  color: #80673c;
+  cursor: pointer;
+}
+.p2 {
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+.box1 a{
+    text-decoration: none;
+}
+.ft2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+.ft2 h1{
+    font-family: 'Dancing Script' !important;
+    color: #80673c;
+    font-size: 3.5em;
+    margin-bottom: 2%;
+    letter-spacing: 3px;
+    font-weight: bold;
+     margin-top: 1.5em;
+     cursor: pointer;
+}
+.p3{
+    font-size: 1.2em;
+    color: white !important;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+.p4{
+    color: white;
+    font-size: 0.8em;
+    padding-top: 30px;
+    cursor: pointer;
+    text-decoration: none;
+}
